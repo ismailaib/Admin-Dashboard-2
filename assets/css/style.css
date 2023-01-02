@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+}
+main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+.content {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% auto 20%;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.right-bar {
+    display: grid;
+    grid-template-rows: 35% auto 15%;
+    background-image: url(/assets/img/r-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-img img{
+    width: 35%;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 100%;
+}
+.user-text {
+    color: #1e293a;
+    text-align: center;
+}
+.user-text h2 {
+    margin: 0;
+}
+.user-text h4 {
+    color: rgb(88, 88, 88);
+    text-align: center;
+}
+.right-nav,.bottom-nav {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    flex-direction: column;
+    gap: 10%;
+    padding: 0;
+    text-align: start;
+}
+.right-nav a ,.bottom-nav a {
+    text-decoration: none;
+    color: #2525258a;
+    transition: all 300ms ease;
+    font-size: 1.2rem;
+}
+.right-nav a:hover,.bottom-nav a:hover {
+    text-decoration: none;
+    color: #1e293a;
+}
+.right-nav .active {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #1e293a;
+    font-size: 1.7rem;
+}
+.bottom-nav a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.footer-card {
+    line-height: 2rem;
+}
+.footer-title ,.footer-card {
+    margin: 2rem;
+}
+.date-active {
+    width: 81px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fbb650;
+    color: white;
+    border-radius: 20px;
+}
+.date {
+    width: 81px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fbb75057;
+    color: rgb(241, 171, 19);
+    border-radius: 20px;
+}
+.footer-card h5{
+    color: rgb(73, 72, 72);
+}
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+

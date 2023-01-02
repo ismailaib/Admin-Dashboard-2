@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+    main {
+        grid-template-columns: 100%;
+    }
+    .right-bar {
+        display: none;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
