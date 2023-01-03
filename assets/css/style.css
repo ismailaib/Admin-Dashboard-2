@@ -27,16 +27,18 @@ main {
 .right-bar {
     display: grid;
     grid-template-rows: 35% auto 15%;
-    background-image: url(/assets/img/r-img.jpg);
+    background-image: url(/assets/img/img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background: #faefda;
 }
 .user {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .user-img {
     display: flex;
@@ -97,6 +99,7 @@ main {
 }
 .footer-card {
     line-height: 2rem;
+    cursor: pointer;
 }
 .footer-title ,.footer-card {
     margin: 2rem;
@@ -124,13 +127,81 @@ main {
 .footer-card h5{
     color: rgb(73, 72, 72);
 }
+nav.nav-bar {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
 .search-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    justify-content: center;
 }
-
-
-
-
+span.fas.fa-solid.fa-magnifying-glass {
+    font-size: 1.4rem;
+    color: #afafaf;
+    cursor: pointer;
+}
+input[type="text"] {
+    height: 40%;
+    width: 70%;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #afafaf;
+}
+input[type="text"]:focus {
+    outline: none;
+    color: #afafaf;
+}
+::placeholder {
+    color: #afafaf;
+  }
+.n-message{
+    font-size: 1.4rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: #afafaf;
+}
+.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.n-message #counter{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b48aff;
+    border-radius: 100%;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+i {
+    cursor: pointer;
+}
+.consultant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.consultant h3 {
+    font-size: 1rem;
+    color: #a3f1b6;
+    border: 3px solid #a3f1b6;
+    border-radius: 25px;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.consultant h3:hover {
+    background: #a3f1b6;
+    color: white;
+}
