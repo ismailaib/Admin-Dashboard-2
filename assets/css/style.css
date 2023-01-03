@@ -22,7 +22,7 @@ main {
 
 .center {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: auto 25%;
 }
 .right-bar {
     display: grid;
@@ -204,4 +204,41 @@ i {
 .consultant h3:hover {
     background: #a3f1b6;
     color: white;
+}
+.left-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.left-bar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
+    gap: 1rem;
+    border: 0.5px solid rgba(201, 200, 200, 0.514);
+}
+.container img {
+    width: 100%;
+}
+.container button {
+    background: #f3d28c;
+    border: none;
+    width: 90%;
+    height: 3rem;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    transition: all 300ms ease;
+}
+.container button:hover {
+    background: #ffffff;
+    border: 2px solid #f3d28c;
+    color: #f3d28c;
 }
