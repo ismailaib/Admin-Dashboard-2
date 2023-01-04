@@ -225,6 +225,8 @@ i {
     border-radius: 30px;
     gap: 1rem;
     border: 0.5px solid rgba(201, 200, 200, 0.514);
+    height: 100%;
+    justify-content: space-between;
 }
 .container img {
     width: 100%;
@@ -263,38 +265,39 @@ i {
     justify-content: space-between;
 }
 
-.circle {
-    display: grid;
-    grid-template-areas: "layer";
-    place-items: center;
+.circular-progress{
+    position: relative;
+    height: 50%;
+    width: 50%;
     border-radius: 50%;
-    --radius: 20vmin;
-    width: calc(2 * var(--radius));
-    height: calc(2 * var(--radius));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-  
-.stat {
-    grid-area: layer;
-    width: 10vmin;
-    height: 10vmin;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: #f5f1e885;
-    font-weight: bold;
-    font-size: 3vmin;
-    --d: calc(var(--i) / var(--total));
-    --r-offset: -0.25turn;
-    --r-amount: 1turn;
-    --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
-    --transform: rotate(var(--r)) translate(var(--radius))
-      rotate(calc(-1 * var(--r)));
-    transform: var(--transform);
-    transition: transform 1.5s ease-in-out;
+.progress-value img{
+    width: 100%;
+}
+
+.text{
+    font-size: 15px;
+    font-weight: 500;
+    color: #606060;
 }
 .table-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 2rem;
+}
+.table-content .container-1,
+.table-content .container-2,
+.table-content .container-3,
+.table-content .container-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
 }

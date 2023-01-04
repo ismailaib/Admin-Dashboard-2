@@ -37,4 +37,21 @@
         align-items: center;
         flex-direction: column;
     }
+    .progress-value {
+        width: 60%;
+    }
+    .table-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .table {
+        height: fit-content;
+    }
+    .table-content .container-1, .table-content .container-2, .table-content .container-3, .table-content .container-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 1rem;
+    }
 }
