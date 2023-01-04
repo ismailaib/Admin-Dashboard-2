@@ -28,4 +28,13 @@
         overflow-x: none;
         grid-template-columns: 1fr;
     }
+    .container img {
+        width: 50%;
+    }
+    .left-bar {
+        overflow: initial;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
