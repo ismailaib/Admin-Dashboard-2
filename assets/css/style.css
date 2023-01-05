@@ -28,11 +28,10 @@ main {
 .right-bar {
     display: grid;
     grid-template-rows: 35% auto 15%;
-    background-image: url(/assets/img/img.jpg);
+    background-image: url(/assets/img/l-img.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background: #faefda;
 }
 .user {
     display: flex;
@@ -214,6 +213,8 @@ i {
     justify-content: flex-start;
     margin: 2rem;
     flex-direction: column;
+    gap: 2rem;
+    overflow-y: scroll;
 }
 
 .left-bar .container {
@@ -253,6 +254,8 @@ i {
     border-radius: 40px;
     margin: 2rem;
     padding: 2rem;
+    height: auto;
+    overflow-y: scroll;
 }
 .table h1 {
     font-family: 'Anybody', cursive;
@@ -298,6 +301,19 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin: 1rem;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fae2c3; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f3c78e; 
+  }
