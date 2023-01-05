@@ -169,7 +169,7 @@ input[type="text"]:focus {
 .nav-icon {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .n-message #counter{
     width: 2rem;
